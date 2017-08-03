@@ -4,7 +4,7 @@
 //
 //  Created by JasonLee on 2017/8/3.
 //  Copyright © 2017年 tdrhedu. All rights reserved.
-//  Have a bad access bug now
+//  
 
 #ifndef number_of_tasks_running_avl_h
 #define number_of_tasks_running_avl_h

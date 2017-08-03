@@ -22,8 +22,6 @@ struct AvlNode {
     int height;
 };
 
-
-
 /**
  获取当前时间点同时进行的任务数
  
@@ -32,8 +30,6 @@ struct AvlNode {
  @return 该时间点同时进行的任务数
  */
 int FindNumberOfTasksRunning(int time, AvlTree tree);
-
-
 
 /**
  将start时间、end时间组装成为时间节点数组
@@ -45,13 +41,9 @@ int FindNumberOfTasksRunning(int time, AvlTree tree);
  */
 AvlTree AssembleTimeNodes(int start[], int end[], int n);
 
-
-
 //--- Insert time_node to AvlTree ---
 
 AvlTree Insert(TimeNode time_node, AvlTree tree);
-
-
 
 // 分层遍历
 
@@ -81,14 +73,12 @@ void NumberOfTasksRunning(int number_of_tasks_running[],
     //--- 组成数组 ---
     TimeNode timeNodes = AssembleTimeNodes(start, end, n);
     
-    
     //--------------------- printf --------------------------
     for (int i = 0; i < 2 * n; i++) {
         
         printf("timesArray: time: %d, num: %d point: %p\n", timeNodes[i].time, timeNodes[i].number_of_task_running, timeNodes + i);
     }
     //-------------------------------------------------------
-    
     
     AvlTree tree = NULL;
     
@@ -97,8 +87,6 @@ void NumberOfTasksRunning(int number_of_tasks_running[],
         
         tree = Insert(timeNodes + i, tree);
     }
-    
-    free(timeNodes);
     
     //--- 遍历树,方便查看层级结构 ---
     PrintTree(tree, 2 * n);
@@ -113,6 +101,8 @@ void NumberOfTasksRunning(int number_of_tasks_running[],
         
         printf("result: time : %d, num : %d \n", time, num);
     }
+    
+    free(timeNodes);
 }
 
 
@@ -138,7 +128,7 @@ TimeNode AssembleTimeNodes(int start[], int end[], int n)
 {
     //--- n的数值比较小，此处复杂度为O(n^2) ---
     
-    TimeNode timeNodes = malloc(2 * n * sizeof(TimeNode));
+    TimeNode timeNodes = malloc(2 * n * sizeof(struct AvlNode));
     
     for (int i = 0; i < 2 * n; i++) {
         
@@ -213,10 +203,7 @@ AvlTree Insert(TimeNode time_node, AvlTree tree)
 {
     if (tree == NULL) {
         
-        tree = malloc(sizeof(AvlTree));
-        
-        tree->number_of_task_running = time_node->number_of_task_running;
-        tree->time = time_node->time;
+        tree = time_node;
         tree->height = 0;
         tree->left = tree->right = NULL;
         
@@ -306,11 +293,11 @@ static AvlTree DoubleRotateWithRight(AvlTree p)
 void PrintTree(TimeNode time_node, int total)
 {
     
-    printf("\n---------------------------------------------------\n");
+    printf("\n----------------------------------\n");
     
     if (NULL == time_node) return;
     
-    TimeNode *vec = (TimeNode *)malloc(total * sizeof(TimeNode));
+    TimeNode *vec = (TimeNode *)malloc(total * sizeof(struct AvlNode));
     
     int cur = 0;
     int last = 0;
@@ -346,7 +333,7 @@ void PrintTree(TimeNode time_node, int total)
         printf("\n");
     }
     
-    printf("---------------------------------------------------\n\n");
+    printf("----------------------------------\n\n");
     
     free(vec);
 }
