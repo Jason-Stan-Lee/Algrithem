@@ -11,8 +11,8 @@
 #include "number_of_tasks_running_avl.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
     
+    // insert code here...
     
     int start[] = {0, 2, 5};
     int end[] = {4, 8, 7};
@@ -23,14 +23,22 @@ int main(int argc, const char * argv[]) {
     int number_of_tasks_running[m]; // {1, 0, 1, 2}
     
     /*
+     
     NumberOfTasksRunning2(number_of_tasks_running,
                           start,
                           end,
                           n,
                           query,
-                          m);*/
+                          m);
+     
+     */
     
-    NumberOfTasksRunning(number_of_tasks_running, start, end, n, query, m);
+    NumberOfTasksRunning(number_of_tasks_running,
+                         start,
+                         end,
+                         n,
+                         query,
+                         m);
     
     return 0;
 }

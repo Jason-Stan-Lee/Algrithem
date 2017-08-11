@@ -62,7 +62,6 @@ static AvlTree SingleRotateWithRight(AvlTree p);
 static AvlTree DoubleRotateWithLeft(AvlTree p);
 static AvlTree DoubleRotateWithRight(AvlTree p);
 
-
 void NumberOfTasksRunning(int number_of_tasks_running[],
                           int start[],
                           int end[],
@@ -104,7 +103,6 @@ void NumberOfTasksRunning(int number_of_tasks_running[],
     
     free(timeNodes);
 }
-
 
 static int Max(int a, int b)
 {
@@ -312,11 +310,8 @@ void PrintTree(TimeNode time_node, int total)
         while (cur < last) {
             
             printf("(t: %d,n : %d)", vec[cur]->time, vec[cur]->number_of_task_running);
-            
             if (vec[cur]->left) printf("L,");
-            
             if (vec[cur]->right) printf("R.");
-            
             
             if (NULL != vec[cur]->left) {
                 

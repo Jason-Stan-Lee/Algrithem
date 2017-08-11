@@ -28,11 +28,50 @@ Solutions to some algrithem questions
   Example
 
   input: 
+
          n = 3;
          m = 4;
          start = [0, 5, 2];
          end = [4, 7, 8];
          query = [1, 9, 4, 3];
+
   output:
+
          [1, 0, 1, 2]
+
+
+2. Find missed number:
+  
+  Given an array which have n-1 items,
+
+  the range of this items is [1, n],
+
+  the array missed one of them,
+
+  Write code to find the missed number.
+
+  Function Definition
+
+  int find_missed_number(
+  						 int array[],
+  						 int n)
+
+  {
+
+  }
+
+ input:
+
+ 	    int array[] = {1, 2, 4};
+ 	    n = 4;
+
+ output:
+
+ 		3;
+
+
+
+
+
+
 

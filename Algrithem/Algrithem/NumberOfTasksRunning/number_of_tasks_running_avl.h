@@ -39,6 +39,4 @@ void NumberOfTasksRunning(int number_of_tasks_running[],
                           int query[],
                           int m);
 
-
-
 #endif /* number_of_tasks_running_h */
