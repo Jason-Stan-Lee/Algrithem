@@ -27,4 +27,7 @@ long count_of_digit_one_circulation(long number);
 // recursion method to solve this problem
 long count_of_digit_one_recursion(long number);
 
+// the better method in leetcode
+int count_of_digit_one_best(int number);
+
 #endif /* number_of_digit_one_h */

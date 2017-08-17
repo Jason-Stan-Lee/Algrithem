@@ -145,3 +145,31 @@ int get_digits(long number) {
     
     return digits;
 }
+
+
+int count_of_digit_one_best(int n) {
+    
+    if (n < 0) return 0;
+    
+    int base = 1;
+    int result = 0;
+    
+    while (n / base > 0) {
+        
+        int cur = n / base % 10;
+        
+        if (cur > 1) {
+            result +=  (n/base/10 + 1) * base;
+        } else if (cur == 1) {
+            result += (n/base/10)*base + n%base + 1;
+        } else {
+            result += (n/base/10)*base;
+        }
+        
+        if(base==1000000000) break;
+        
+        base *= 10;
+    }
+    
+    return result;
+}
