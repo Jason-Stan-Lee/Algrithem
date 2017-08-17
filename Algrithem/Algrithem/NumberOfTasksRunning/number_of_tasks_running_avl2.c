@@ -65,14 +65,13 @@ void Quiksort(TimeNode* time_nodes,int low,int high)
             
             time_nodes[j].time= time_nodes[i].time;
             time_nodes[i].number_of_task_running = time_nodes[j].number_of_task_running;
-            
         }
         
         time_nodes[i].time = time;
         time_nodes[i].number_of_task_running = num_tasks_running;
         
-        Quiksort(time_nodes,low,i-1);
-        Quiksort(time_nodes,j+1,high);
+        Quiksort(time_nodes, low, i - 1);
+        Quiksort(time_nodes, j + 1, high);
     } else {
         
         return;
