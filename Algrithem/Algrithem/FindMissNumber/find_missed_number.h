@@ -28,13 +28,11 @@
  }
  
  input:
+    int array[] = {1, 2, 4};
+    n = 4;
  
-  int array[] = {1, 2, 4};
-  n = 4;
+ output: 3
  
- output:
- 
-  3;
  */
 
 

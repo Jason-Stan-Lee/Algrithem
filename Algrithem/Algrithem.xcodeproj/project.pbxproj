@@ -11,6 +11,7 @@
 		A118E54D1F33180B00E1A237 /* number_of_tasks_running_avl.c in Sources */ = {isa = PBXBuildFile; fileRef = A118E54B1F33180B00E1A237 /* number_of_tasks_running_avl.c */; };
 		A118E5501F331A0C00E1A237 /* number_of_tasks_running_avl2.c in Sources */ = {isa = PBXBuildFile; fileRef = A118E54E1F331A0C00E1A237 /* number_of_tasks_running_avl2.c */; };
 		A1500CF11F3DA54A004F45CE /* find_missed_number.c in Sources */ = {isa = PBXBuildFile; fileRef = A1500CEF1F3DA54A004F45CE /* find_missed_number.c */; };
+		A194EE591F45344C009085C8 /* number_of_digit_one.c in Sources */ = {isa = PBXBuildFile; fileRef = A194EE571F45344C009085C8 /* number_of_digit_one.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,9 @@
 		A118E54F1F331A0C00E1A237 /* number_of_tasks_running_avl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = number_of_tasks_running_avl2.h; sourceTree = "<group>"; };
 		A1500CEF1F3DA54A004F45CE /* find_missed_number.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = find_missed_number.c; sourceTree = "<group>"; };
 		A1500CF01F3DA54A004F45CE /* find_missed_number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = find_missed_number.h; sourceTree = "<group>"; };
+		A194EE571F45344C009085C8 /* number_of_digit_one.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = number_of_digit_one.c; sourceTree = "<group>"; };
+		A194EE581F45344C009085C8 /* number_of_digit_one.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = number_of_digit_one.h; sourceTree = "<group>"; };
+		A194EE5A1F458152009085C8 /* number_of_digit_one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = number_of_digit_one.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				A118E53C1F33178800E1A237 /* main.c */,
+				A194EE561F45334B009085C8 /* NumberofDigitOne */,
 				A1500CEE1F3DA51D004F45CE /* FindMissNumber */,
 				A118E5431F3317B400E1A237 /* NumberOfTasksRunning */,
 			);
@@ -91,6 +96,16 @@
 				A1500CF01F3DA54A004F45CE /* find_missed_number.h */,
 			);
 			path = FindMissNumber;
+			sourceTree = "<group>";
+		};
+		A194EE561F45334B009085C8 /* NumberofDigitOne */ = {
+			isa = PBXGroup;
+			children = (
+				A194EE571F45344C009085C8 /* number_of_digit_one.c */,
+				A194EE581F45344C009085C8 /* number_of_digit_one.h */,
+				A194EE5A1F458152009085C8 /* number_of_digit_one.jpg */,
+			);
+			path = NumberofDigitOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +170,7 @@
 				A118E5501F331A0C00E1A237 /* number_of_tasks_running_avl2.c in Sources */,
 				A118E54D1F33180B00E1A237 /* number_of_tasks_running_avl.c in Sources */,
 				A1500CF11F3DA54A004F45CE /* find_missed_number.c in Sources */,
+				A194EE591F45344C009085C8 /* number_of_digit_one.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
