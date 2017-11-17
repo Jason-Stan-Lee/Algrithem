@@ -44,7 +44,7 @@ int main(int argc, const char * argv[]) {
                          m);
     */
     
-    int n = 1000000000;
+    int n = 999999999;
     
     long ret1 = count_of_digit_one_circulation(n);
     long ret2 = count_of_digit_one_recursion(n);

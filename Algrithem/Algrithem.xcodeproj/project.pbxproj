@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2A6E781FBDC841001620DB /* add_two_numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A6E761FBDC841001620DB /* add_two_numbers.c */; };
 		A118E53D1F33178800E1A237 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A118E53C1F33178800E1A237 /* main.c */; };
 		A118E54D1F33180B00E1A237 /* number_of_tasks_running_avl.c in Sources */ = {isa = PBXBuildFile; fileRef = A118E54B1F33180B00E1A237 /* number_of_tasks_running_avl.c */; };
 		A118E5501F331A0C00E1A237 /* number_of_tasks_running_avl2.c in Sources */ = {isa = PBXBuildFile; fileRef = A118E54E1F331A0C00E1A237 /* number_of_tasks_running_avl2.c */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E2A6E761FBDC841001620DB /* add_two_numbers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = add_two_numbers.c; sourceTree = "<group>"; };
+		4E2A6E771FBDC841001620DB /* add_two_numbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = add_two_numbers.h; sourceTree = "<group>"; };
 		A118E5391F33178800E1A237 /* Algrithem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algrithem; sourceTree = BUILT_PRODUCTS_DIR; };
 		A118E53C1F33178800E1A237 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		A118E54B1F33180B00E1A237 /* number_of_tasks_running_avl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = number_of_tasks_running_avl.c; sourceTree = "<group>"; };
@@ -51,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E2A6E751FBDC82D001620DB /* AddTwoNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				4E2A6E761FBDC841001620DB /* add_two_numbers.c */,
+				4E2A6E771FBDC841001620DB /* add_two_numbers.h */,
+			);
+			path = AddTwoNumbers;
+			sourceTree = "<group>";
+		};
 		A118E5301F33178800E1A237 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				A118E53C1F33178800E1A237 /* main.c */,
+				4E2A6E751FBDC82D001620DB /* AddTwoNumbers */,
 				A194EE561F45334B009085C8 /* NumberofDigitOne */,
 				A1500CEE1F3DA51D004F45CE /* FindMissNumber */,
 				A118E5431F3317B400E1A237 /* NumberOfTasksRunning */,
@@ -167,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A118E53D1F33178800E1A237 /* main.c in Sources */,
+				4E2A6E781FBDC841001620DB /* add_two_numbers.c in Sources */,
 				A118E5501F331A0C00E1A237 /* number_of_tasks_running_avl2.c in Sources */,
 				A118E54D1F33180B00E1A237 /* number_of_tasks_running_avl.c in Sources */,
 				A1500CF11F3DA54A004F45CE /* find_missed_number.c in Sources */,
